@@ -11,7 +11,19 @@
         }
 
         body {
-            background: url(https://i.pinimg.com/originals/57/bb/e8/57bbe8862a745223258b21cd20df920c.jpg) repeat;
+            background: url(https://cdn.wallpapersafari.com/68/71/tK29Ld.jpg) repeat;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
         }
 
         .header {
@@ -23,6 +35,7 @@
         .header h1 {
             text-align: center;
             margin-top: 10px;
+            font-size: 50px;
         }
 
         .navbar {
@@ -36,26 +49,54 @@
         .navbar a {
             margin: 10px 20px;
             color: black;
-            transition: 0.2s;
             text-decoration: none;
+            /* transition: 0.2s; */
+            padding: 10px;
+            font-size: 20px;
         }
 
         .navbar a:hover {
-            background-color: rgba(0, 0, 0, 0.4);
+            text-decoration: underline 2px;
         }
 
         .subhead {
-            text-align: center;
+            text-align: right;
+            margin-right: 50px;
         }
 
         .main {
-            display: flex;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+            padding: 10px;
         }
 
-        .column {
+        .main>div {
+            /* background-color: rgba(0, 0, 0, 0.3); */
+            text-align: justify;
+            padding: 20px 30px;
+        }
+
+        .column1 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .column2 {
+            grid-column-start: 4;
+            grid-column-end: 4;
+            border-left: 5px solid rgba(0, 0, 0, 0.7);
+
+        }
+
+        /* .column {
             flex: 50%;
             height: 100%;
-        }
+            background-color: rgba(0, 0, 0, 0.1);
+            margin: 0 20px;
+            padding: 15px;
+
+        } */
     </style>
 </head>
 
@@ -70,24 +111,58 @@
             <a href="">BREAKING NEWS</a>
             <a href="">BREAKING NEWS</a>
         </div>
+        <h1 style="margin: 20px; text-align: center; ">Parerea persoanleor care au trecut prin
+            comunism</h1>
         <div class="subhead">
-            <h2><strong style="color: red; text-decoration: underline;">Soc si groaza</strong> baba comunista</h2>
+            <h3>Data publicarii: <i>12 Ianuarie</i></h3>
+            <h3>Autor: <i>Gigel jurnalistu'</i></h3>
+            <br>
         </div>
     </div>
-    <h1>Comunista</h1>
     <div class="main">
-        <div class="column" style="background-color:#aaa;">
+        <div class="column1">
             <h2>Column 1</h2>
-            <p>Some text..</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet lectus felis. Pellentesque
+                gravida
+                elit eu tempor ultricies. Vestibulum dictum turpis et euismod vestibulum. Proin pellentesque justo
+                at
+                dignissim tincidunt. Integer et orci venenatis, varius velit ut, suscipit tellus. Aliquam non turpis
+                mattis massa ultrices porttitor ac et lacus. Fusce non dolor tellus. Cras augue risus, molestie at
+                sagittis eget, sagittis quis ante. Duis vel nunc in ligula lobortis pharetra.
+            </p>
+            <h2>Column 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet lectus felis. Pellentesque
+                gravida
+                elit eu tempor ultricies. Vestibulum dictum turpis et euismod vestibulum. Proin pellentesque justo
+                at
+                dignissim tincidunt. Integer et orci venenatis, varius velit ut, suscipit tellus. Aliquam non turpis
+                mattis massa ultrices porttitor ac et lacus. Fusce non dolor tellus. Cras augue risus, molestie at
+                sagittis eget, sagittis quis ante. Duis vel nunc in ligula lobortis pharetra.
+            </p>
         </div>
-        <div class="column" style="background-color:#bbb;">
+        <div class="imag" style="background-color: transparent;">
+            <img style="height: 150px; "
+                src="https://upload.wikimedia.org/wikipedia/en/a/ac/Logo_of_the_Romanian_Social_Democratic_Party_%281990%E2%80%932001%29.png">
+            <br>
+            <i>VOTEAZA-NE</i>
+        </div>
+        <div class="column2">
             <h2>Column 2</h2>
-            <p>Some text..</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet lectus felis. Pellentesque
+                gravida
+                elit eu tempor ultricies. Vestibulum dictum turpis et euismod vestibulum. Proin pellentesque justo
+                at
+                dignissim tincidunt. Integer et orci venenatis, varius velit ut, suscipit tellus. Aliquam non turpis
+                mattis massa ultrices porttitor ac et lacus. Fusce non dolor tellus. Cras augue risus, molestie at
+                sagittis eget, sagittis quis ante. Duis vel nunc in ligula lobortis pharetra.</p>
+            <!-- <img style="width: 300px; height: 200px;" alt="pcr"
+                src="https://totb.ro/wp-content/uploads/2014/11/blocul-partidelor-democratice.jpg"> -->
         </div>
+
     </div>
 
     <script>
-
+        let x = 10;
     </script>
 </body>
 

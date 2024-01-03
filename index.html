@@ -49,7 +49,12 @@
         }
 
         .main {
-            margin: 20px;
+            display: flex;
+        }
+
+        .column {
+            flex: 50%;
+            height: 100%;
         }
     </style>
 </head>
@@ -69,26 +74,16 @@
             <h2><strong style="color: red; text-decoration: underline;">Soc si groaza</strong> baba comunista</h2>
         </div>
     </div>
+    <h1>Comunista</h1>
     <div class="main">
-        <h1>Comunista</h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lectus leo, commodo a odio at, ornare
-            molestie mi. Ut eu elit a nisi fringilla hendrerit ac vel mi. Suspendisse id lacinia purus. Donec semper
-            imperdiet porta. Integer viverra libero sapien, vitae accumsan dui vulputate non. Aliquam maximus quam orci,
-            at rhoncus eros rutrum vel. Vestibulum condimentum sit amet nisl sed varius. Suspendisse maximus erat quis
-            lorem varius tempus. Duis posuere euismod malesuada. Sed viverra quis lectus quis dictum. Fusce purus magna,
-            dapibus a massa id, efficitur commodo libero. Duis vehicula tincidunt neque, at facilisis tortor pretium
-            quis.</p>
-        <br>
-
-        <p>
-            Praesent vitae maximus enim. Nunc aliquam iaculis lectus, at imperdiet augue tempus et. Quisque ac bibendum
-            eros. Maecenas laoreet pretium dolor, sed elementum tortor posuere a. Pellentesque mollis libero at elit
-            eleifend malesuada. Ut purus dolor, accumsan nec purus vel, dignissim porttitor metus. Nullam dignissim,
-            enim venenatis hendrerit blandit, dolor ante feugiat orci, eget blandit ipsum tortor ac mauris. Aliquam quis
-            nulla rhoncus, laoreet erat volutpat, posuere orci. In volutpat mi nec nisi vehicula fermentum. Etiam
-            suscipit lectus sit amet leo interdum, nec fermentum mi mollis. Morbi interdum velit sit amet varius dictum.
-            Proin at nisi vitae libero sollicitudin dignissim sit amet imperdiet ante. Cras rhoncus interdum
-            scelerisque.</p>
+        <div class="column" style="background-color:#aaa;">
+            <h2>Column 1</h2>
+            <p>Some text..</p>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+            <h2>Column 2</h2>
+            <p>Some text..</p>
+        </div>
     </div>
 
     <script>
